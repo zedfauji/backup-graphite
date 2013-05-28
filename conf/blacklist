@@ -1,0 +1,5 @@
+^stats.\sv-sigiri*.\services.\*.\singleGet.*
+^stats.\sv-sigiri*.\services.\*.\multiGet.*
+^stats.\sv-sigiri*.\services.\*.\singleGetreadLatencyservices.*
+stats.sv-sigiri*.services.*.multiGet.*
+

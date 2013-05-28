@@ -1,0 +1,12 @@
+#First we kill the instance
+
+kill -n 9 $(ps -elf|grep node|grep -v grep|awk '{print $4}')
+
+#Second we remove the log file
+
+rm -rf /cacheDir/statsd.log
+
+#Third we start the statsd process
+
+ /usr/local/bin/node /opt/graphite/statsd/stats.js /opt/graphite/statsd/local.js > /cacheDir/statsd.log &
+
